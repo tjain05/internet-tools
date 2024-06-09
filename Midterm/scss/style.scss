@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+.link{
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.text-value{
+    display: flex;
+    flex-direction: column;
+    color: blue;
+    gap:2px;
+}
+.text-value>p{
+    align-self: flex-end;
+    margin: 2px;
+}
+.enter-button{
+    align-self: flex-end;
+    width: 30%;
+    height: 30px;
+}
+.input-box{
+    height: 150px;
+    width: 90%;
+    font-size: 2rem;
+}
+#answer{
+    color: white;
+    background-color: #332703;
+    
+}
+.footer-text{
+    color: white;
+    text-align: center;
+}
+
