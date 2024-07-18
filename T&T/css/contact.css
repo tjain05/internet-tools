@@ -1,0 +1,25 @@
+.form-container {
+  padding: 3em;
+  background-color: rgb(59, 57, 57);
+  box-shadow: 0 0 15px rgba(213, 215, 64, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: gold;
+}
+
+.content-container {
+  padding: 3em;
+  color: gold;
+}
+
+.query-area {
+  height: 6em;
+}
+
+@media (min-width: 992px) {
+  .form-container,
+  .content-container {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 5px;
+  }
+}

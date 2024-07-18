@@ -1,0 +1,142 @@
+.common-class {
+  background-color: #656464;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  color: gold;
+}
+
+.active {
+  background-color: black;
+  border-radius: 10px;
+  font-weight: bold;
+}
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.footer-container {
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* Adjust as needed */
+}
+.footer-container > div > a {
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.login_container {
+  width: 30%;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+.tagline {
+  margin-bottom: 20px;
+  font-size: 24px;
+  overflow: hidden;
+  border-right: 0.15em solid gold;
+  color: gold;
+  white-space: nowrap;
+  animation: typing 5.5s steps(20, end);
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 2em;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  width: 220px;
+  height: 220px;
+  font-weight: bolder;
+}
+.main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.down-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+}
+.down-button img {
+  width: 60px; /* Adjust the size of the down arrow image if needed */
+  height: auto;
+}
+
+.next-section {
+  height: 100vh;
+}
+
+.text-label {
+  margin-left: 1em;
+  font-size: 2em;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0);
+  color: gold;
+  width: 100%;
+  margin: 0;
+  padding: 4px;
+  box-shadow: 0 0 15px rgba(213, 215, 64, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 2em;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(213, 215, 64, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 2em 0;
+}
+.cards > a {
+  text-decoration: none;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(213, 215, 64, 0.7);
+}
+
+@media (max-width: 992px) {
+  .down-button {
+    display: none;
+  }
+}

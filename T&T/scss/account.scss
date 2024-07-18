@@ -1,0 +1,58 @@
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+textarea {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.account-buttons {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.account-detail-container > p {
+  font-size: 1.3em;
+}
+
+.inner-container-account {
+  margin-top: 2em;
+  background-color: rgb(98, 98, 98);
+  color: gold;
+  border-radius: 10px;
+  width: 60%;
+  padding: 2em;
+  box-shadow: 0 0 15px rgba(213, 215, 64, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 5em;
+}
+
+.inner-label-account {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+.account-detail-container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.account-detail-container > textarea {
+  border-radius: 10px;
+  width: 100%;
+  resize: vertical;
+  overflow-wrap: break-word;
+  min-height: 50px;
+  box-sizing: border-box;
+  transform: translateY(-1em);
+}
+.detail-area:disabled {
+  background-color: #bbbebe; /* Gray background */
+}
+
+#submit-details {
+  display: none;
+}
